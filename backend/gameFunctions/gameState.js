@@ -31,6 +31,7 @@ export function startGame(currGameState) {
 
 export function hit(currGameState) {
     // if (currGameState.state !== "playing") throw new Error("Not your turn");
+    console.log(dealCard(currGameState.shoe))
     currGameState.playerHand.push(dealCard(currGameState.shoe))
     return currGameState
 }

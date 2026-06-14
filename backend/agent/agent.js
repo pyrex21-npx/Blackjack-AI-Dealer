@@ -330,7 +330,7 @@ export async function runAgent(userMessage , gameState) {
         })
 
         const choice = response.choices[0]
-        console.log(response.usage)
+        // console.log(response.usage)
         messages.push(choice.message)
 
         if (choice.finish_reason === "stop") {
