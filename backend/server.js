@@ -3,6 +3,8 @@ import cors from "cors"
 import session from "express-session"
 import agentRoute from "./gameRoutes/agent_route.js"
 
+process.on('warning', e => console.warn(e.stack));
+
 
 const app = express()
 app.set('trust proxy', 1)
