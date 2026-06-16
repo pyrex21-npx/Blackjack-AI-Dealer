@@ -19,6 +19,7 @@ agent_router.post("/message" , async (req , res) => {
         gameState: result.gameState,
         // statehistory: result.statehistory
     })
+    console.log(res.json(req.session))
 })
 
 agent_router.get("/debug-session", (req, res) => {
