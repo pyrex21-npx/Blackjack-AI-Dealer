@@ -5,6 +5,7 @@ import { runAgent } from "../agent/agent.js";
 const agent_router = Router()
 
 agent_router.post("/message" , async (req , res) => {
+    console.log(req.session)
     if (!req.session.game){
         req.session.game = createGameState()
     }
