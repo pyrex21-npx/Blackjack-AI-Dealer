@@ -5,7 +5,7 @@ import { evaluateHand } from "./hand.js";
 
 export function createGameState() {
     return {
-        shoe: createShoe(),
+        shoe: createShoe(6),
         state: "idle",
         playerHand: [],
         dealerHand: [],
