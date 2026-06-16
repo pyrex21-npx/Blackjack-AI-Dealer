@@ -51,5 +51,5 @@ app.use("/api/agent" , agentRoute)
 const port = process.env.PORT
 
 app.listen(port, () => {
-    console.log(`The server is running on http://localhost:${PORT}`)
+    console.log(`The server is running on http://localhost:${port}`)
 })
